@@ -1,0 +1,37 @@
+.weapon {
+    text-align: center;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    .weaponTitle {
+        color: #E2A109;
+        font-size: 14px;
+    }
+}
+.splitScreen {
+    background: #131414;
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    .leftPane {
+        width: 284px,
+    }
+    .rightPane {
+        flex: auto;
+        color: white;
+        .mainPane {
+            display: flex;
+            flex-direction: row;
+            .subleft {
+                width: calc(10vw - 28px);
+            }
+            .submain {
+                flex: auto;
+            }
+            .subright {
+                width: calc(10vw - 28px);
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.custom-button {
+    box-shadow: -4px 11px 5px -4px rgba(0, 0, 0, 0.17);
+  }
+  
+  
+  .btn--outline {
+    border: 2px solid #ff0032;
+    text-transform: uppercase;
+    color: #111;
+    font-weight: 600;
+    background-color: #ccc;
+    border-radius: 30px;
+  }
+  .custom-button.btn--outline:hover {
+    border: 2px solid #ccc;
+    color: #fff;
+    background-color: #ff0032;
+  }
+  
+  
+  
+  .btn--test {
+    border: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: green;
+  }
+  .btn--test:hover {
+    border: none;
+    color: #fff;
+    background-color: purple;
+  }
+  
+  
+  
+  .btn--medium {
+    padding: 10px;
+    width: 130px;
+  }
+  .btn--large {
+    padding: 15px 30px;
+    width: 200px;
+  }
+  
