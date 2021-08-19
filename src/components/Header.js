@@ -1,10 +1,10 @@
 import React from 'react'
 
 import styles from './Header.module.scss'
-import CustomButton from './CustomButton'
 import jackpot from '../assets/jack_icon.png'
 import coinflip from '../assets/sword_icon.png'
 import upgrader from '../assets/thunder_icon.png'
+import money from '../assets/money_icon.png'
 
 const headerdata = [
     {
@@ -24,6 +24,10 @@ const headerdata = [
     }
 ]
 
+const message = () => {
+    console.log("Hello World!") 
+}
+
 const Header = () => {
 
     const HeaderItem = ({weapon}) => (
@@ -38,24 +42,18 @@ const Header = () => {
                 <div className={styles.leftPane}></div>
                 <div className={styles.rightPane}>
                     <div className={styles.mainPane}>
-                        <div className={styles.subleft}>a</div>
+                        <div className={styles.subleft}></div>
                         <div className={styles.submain}>
                             {headerdata.map((data) =>(
                                 <HeaderItem key={data.id} weapon={data}/>
                             ))}
-                           <div className="hero-btn">
-                                <CustomButton buttonStyle="btn--outline" buttonSize="btn--large">
-                                get started
-                                </CustomButton>
+                            <div>
+                                <button className={styles.moneyBtn} onClick={message}><img src={money} alt="money"/>320.00</button>
+                                <button className={styles.depositBtn} onClick={message}>DEPOSIT</button>
                             </div>
-                            <h4>Custom Button #2</h4>
-                            <div className="hero-btn">
-                                <CustomButton buttonStyle="btn--test" buttonSize="btn--medium">
-                                get started
-                                </CustomButton>
-                            </div>                        
+                                          
                         </div>
-                        <div className={styles.subright}>c</div>
+                        <div className={styles.subright}></div>
                     </div>
                 </div>
             </div>

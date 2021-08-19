@@ -28,6 +28,18 @@
             }
             .submain {
                 flex: auto;
+                .moneyBtn {
+                    background: black;
+                    border: 1px solid blue;
+                    color: white;
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                .depositBtn {
+                    padding: 8px;
+                    background:chocolate;
+                    margin-left: 10px;
+                }
             }
             .subright {
                 width: calc(10vw - 28px);
